@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tic Tac Toe | HTMT-CSS-Javascript</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kristi&family=Press+Start+2P&family=Readex+Pro&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat&family=Montserrat+Subrayada:wght@700&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body>
+    <div class="container">
+    
+        <main class="background">
+            <div class="title">
+                <h1>Tic Tac Toe</h1>
+            </div>
+            <div id="players">
+                <div id="playerx"></div><span id="vs">vs</span><div id="playero"></div>
+            </div>
+            <!-- pop up start -->
+                
+                <div id="help"> 
+                    <a class="button" href="#popup">How to play</a>
+                    <div class="popup" id="popup">
+                      <div class="popup-inner">
+                
+                        <div class="popuptext">
+                          <h2>About Tic Tac Toe</h2>
+                         
+                          <p>Tic-Tac-Toe is a simple and fun game for 2 players, X and O. It is played on a 3x3 grid.
+                            Each player's goal is to make 3 in a row.
+                        </p>  
+                             <p>Typically, X starts first, but in Gametable's Tabletop Tic Tac Toe,
+                                Player 1 starts first on the first game and Player 2 (or the computer) starts first on the next game. 
+                                The starting player continues to alternate from game to game. This helps keep gameplay fair over time.
+                            </p>
+
+ <p>Players take turns placing their Mark, X or O, on an open square in the grid. 
+The first player to make 3 of their own mark in a row vertically, horizontally, or diagonally wins the game.
+</p>
+
+<p>If all 9 squares are filled and neither player has 3 in a row, the game is considered a Tie.</p>
+
+                            <h4>In the following example in seven steps:</h4>
+                            <img src="images/win.jpeg" alt="">
+                        </div>
+                        <a class="closepopup" href="#">X</a>
+                      </div>
+                    </div>
+                  </div>
+                <!-- end pop up -->
+            
+        <!-- player turn -->
+            <div class="display">
+                Player <span class="display-player playerX">X</span> 's turn
+            </div>
+            
+            <div class="stadium">
+                <div class="box" id="play_box"></div>
+                <div class="box" id="play_box"></div>
+                <div class="box" id="play_box2"></div>
+                <div class="box" id="play_box"></div>
+                <div class="box" id="play_box"></div>
+                <div class="box" id="play_box2"></div>
+                <div class="box" id="play_box3"></div>
+                <div class="box" id="play_box3"></div>
+                <div class="box" id="play_box4"></div>
+            </div>
+            <div class="display reader hide"></div>
+            
+            <div class="controls place">
+                <button id="reset" class="btn btn-warning">Reset</button>
+                <button id="New_game" class="sync" onclick="location.reload();"> </button>
+              
+            </div>
+        </main>
+    <script src='js/script.js'></script>  
+    
+</body>
+</html>
